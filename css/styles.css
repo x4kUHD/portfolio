@@ -1,0 +1,339 @@
+* {
+  font-family: "Outfit", sans-serif;
+  color: white;
+  scroll-behavior: smooth;
+}
+
+#navBar {
+  position: fixed;
+  top: 20px;
+  right: 0px;
+  margin-right: 25px;
+  z-index: 999;
+}
+
+#navBar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  margin-right: auto;
+}
+
+#navBar li {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+#navBar a {
+  text-decoration: none;
+  position: relative;
+  font-size: 18px;
+}
+
+#navBar a::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+  /* You can change the underline color as desired */
+  transition: width 0.2s ease;
+}
+
+#navBar a:hover::after {
+  width: 100%;
+}
+
+.navRectangle {
+  height: 100px;
+  width: 100%;
+  background-color: #424242;
+  opacity: 95%;
+  position: fixed;
+  top: 0px;
+  left: 0;
+  z-index: 2;
+  margin-top: 0;
+}
+
+body {
+  background-color: #424242;
+  height: 2300px;
+}
+
+#head {
+  margin-top: 400px;
+  margin-left: 100px;
+  position: relative;
+  z-index: 1;
+}
+
+.firstHeading {
+  font-size: 100px;
+  margin-bottom: 5px;
+}
+
+#line1 {
+  position: absolute;
+  top: 100px;
+  left: -50px;
+  width: 1200px;
+  height: 1px;
+  background-color: #bababa;
+  z-index: -1;
+  opacity: 30%;
+}
+
+.secondHeading {
+  font-size: 40px;
+  font-weight: 150;
+  margin-top: 5px;
+  margin-left: 3px;
+}
+
+#line2 {
+  position: absolute;
+  top: 177px;
+  left: -50px;
+  width: 1000px;
+  height: 1px;
+  background-color: #bababa;
+  z-index: -1;
+  opacity: 30%;
+}
+
+#vertLine1 {
+  position: absolute;
+  top: -200px;
+  left: 5px;
+  width: 1px;
+  height: 1200px;
+  background-color: #bababa;
+  opacity: 30%;
+}
+
+.up {
+  margin-top: -50px;
+}
+
+#selected_projects {
+  margin-top: 600px;
+  margin-left: 105px;
+  font-size: 50px;
+}
+
+.projText {
+  margin-left: 105px;
+  margin-top: 690px;
+  font-size: 50px;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.designer {
+  color: rgb(255, 255, 186);
+}
+
+.developer {
+  color: rgb(13, 34, 101);
+}
+
+#line3 {
+  position: absolute;
+  top: 1277px;
+  left: 50px;
+  width: 700px;
+  height: 1px;
+  background-color: #bababa;
+  z-index: -1;
+  opacity: 30%;
+}
+
+#sidebar {
+  position: fixed;
+  right: 10px;
+  z-index: 99;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#sidebar a {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.sidebar-img {
+  width: 37px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.sidebar-img:hover {
+  transform: translateX(-10px);
+}
+
+#logo {
+
+  font-size: 32px;
+  text-decoration: none;
+
+  display: inline-block;
+  position: fixed;
+  margin-top: -340px;
+  margin-left: 105px;
+
+  z-index: 3;
+
+  width: 100px;
+  background-color: grey;
+}
+
+#logo img {
+  height: 100%;
+}
+
+.hor_center {
+  text-align: center;
+}
+
+#aboutcenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#aboutme {
+  font-size: 64px;
+  margin-top: 100px;
+}
+
+#picofme {
+  float: left;
+  width: 450px;
+  margin-right: 100px
+}
+
+#text1 {
+  font-size: 28px;
+  font-weight: 200;
+  width: 800px;
+  clear: both;
+  line-height: 1.5
+}
+
+.gt {
+  color: goldenrod;
+}
+
+#aboutbody {
+  height: 800px;
+}
+
+::selection {
+  background: rgb(35, 35, 35);
+}
+
+.proj_thumbnail {
+  padding: 50px;
+  float: left;
+  width: 600px;
+  height: auto;
+  opacity: 100%;
+  background: none;
+  transition: opacity 0.3s ease-in-out, width 0.3s ease-in-out;
+}
+
+.proj_thumbnail:hover {
+  opacity: 70%;
+  width: 620px;
+}
+
+#line4 {
+  position: absolute;
+  top: 1823px;
+  left: 50px;
+  width: 800px;
+  height: 1px;
+  background-color: #bababa;
+  z-index: 5;
+  opacity: 30%;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.scrolldown {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  /* Add a background color for the footer if desired */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  /* Set a height for the footer */
+}
+
+#thumbnails1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#thumbnails2 {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  position: relative;
+  height: 300px;
+  width: 100%;
+}
+
+p.copyright {
+  position: absolute;
+  width: 100%;
+  color: #fff;
+  line-height: 80px;
+  text-align: center;
+  bottom: 0;
+}
+
+#temp {
+  background: white;
+}
+
+.proj_thumbnail_container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.proj_thumbnail_container:hover .thumbnail_text {
+  opacity: 1;
+}
+
+.transition-fade {
+  opacity: 1;
+  transition: 500ms;
+  transform: translateX(0);
+  transform-origin: left;
+}
+
+html.is-animating .transition-fade {
+  opacity: 1;
+  transform: translateX(100%);
+}
+
+html.is-leaving .transition-fade {
+  opacity: 0;
+}
