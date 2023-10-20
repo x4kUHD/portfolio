@@ -1,26 +1,3 @@
-// const emailButton = document.getElementById("email");
-// emailButton.addEventListener("click", copyEmail);
-
-// function copyEmail() {
-//   const email = "yeonwookerickim@gmail.com";
-
-//   // Create a temporary input element to copy the email text
-//   const tempInput = document.createElement("input");
-//   tempInput.value = email;
-//   document.body.appendChild(tempInput);
-
-//   // Select and copy the email text
-//   tempInput.select();
-//   Document.execCommand("copy");
-
-//   // Remove the temporary input element
-//   document.body.removeChild(tempInput);
-
-//   // Provide some feedback to the user (optional)
-//   alert("Email address copied to clipboard: " + email);
-// }
-
-// JavaScript code to handle the "email" button click
 document.addEventListener("DOMContentLoaded", function () {
   const emailButton = document.getElementById("email");
   emailButton.addEventListener("click", copyEmail);
